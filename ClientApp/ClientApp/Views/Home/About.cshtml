@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+
+
+<div>
+    @{
+        if (ViewBag.Message != null)
+        {
+            <ul>
+              @foreach (var item in ViewBag.Message)
+                {
+                  <li>
+                      @item
+                  </li>
+                }
+            </ul>
+        }
+    }
+</div>
